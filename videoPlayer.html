@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+<video id="video_player" width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
+<script>
+    var videoPlayerURL = prompt("Please enter your name", "");
+    var videoPlayer = $("#video_player");
+    videoPlayer.children("source").attr("src",videoPlayerURL);
+    videoPlayer.load();
+</script>
